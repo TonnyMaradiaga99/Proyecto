@@ -22,29 +22,27 @@ namespace Proyecto.Models
 
         public string password{ get; set;}
 
-        public especialidad especialidad { get; set;}
-
-
+        public especialidad Especialidad { get; set;}
+        public enum especialidad
+        {
+            Cardiología,
+            Endocrinología,
+            Hematología,
+            Nefrología,
+            Neumología,
+            Neurología,
+            Oncología,
+            Pedriatría,
+            Psquiatría,
+            Rehabilitación,
+            Reumatología,
+            Obstetricia,
+            Ginecología,
+            Oftalmología,
+            Otorrinolaringología,
+            Urología,
+            
+        }
+        public virtual ICollection<Cita> Citas { get; set; }
     }
-
-    public enum especialidad
-    {
-        Cardiología,
-        Endocrinología,
-        Hematología,
-        Nefrología,
-        Neumología,
-        Neurología,
-        Oncología,
-        Pedriatría,
-        Psquiatría,
-        Rehabilitación,
-        Reumatología,
-        Obstetricia,
-        Ginecología,
-        Oftalmología,
-        Otorrinolaringología,
-        Urología,
-    }
-
 }

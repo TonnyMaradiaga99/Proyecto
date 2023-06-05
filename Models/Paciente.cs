@@ -27,6 +27,6 @@ namespace Proyecto.Models
         public string user{ get; set; }
 
         public string password{ get; set; }
-        
+        public virtual ICollection<Cita> Citas { get; set; }
     }
 }

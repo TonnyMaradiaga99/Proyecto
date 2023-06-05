@@ -38,7 +38,7 @@ public class DoctorService : IDoctorService
             Doctor.experiencia = updDoctor.experiencia;
             Doctor.user = updDoctor.user;
             Doctor.password = updDoctor.password;
-            Doctor.especialidad = updDoctor.especialidad;
+            Doctor.Especialidad = updDoctor.Especialidad;
         
 
             context.Update(Doctor);
